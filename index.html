@@ -55,19 +55,3 @@
     </script>
   </body>
 </html>
-
-<!-- fetch("./books.xml").then((response) => {
-    response.text().then((xmlText) => {
-      xmlContent = xmlText;
-      let parser = new DOMParser();
-      let xmlDOM = parser.parseFromString(xmlContent, "application/xml");
-      let books = xmlDOM.querySelectorAll("book");
-      books.forEach((bookXmlNode) => {
-        let row = document.createElement("tr");
-        let td = document.createElement("td");
-        td.innerText = bookXmlNode.children[0].innerHTML;
-        row.appendChild(td);
-        tableBooks.children[1].appendChild(row);
-      });
-    });
-  }); -->
